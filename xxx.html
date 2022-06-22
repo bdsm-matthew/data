@@ -3,17 +3,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <style>
-	* {
+	/* * {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	} */
+
+	/* body {
+		background-color: blueviolet;
+	} */
+
+	/* 시계 방향 */
+	/* 4개 [위] [오른쪽] [아래] [왼쪽] */
+	/* 3개 [위] [오른쪽 왼쪽] [아래] */
+	/* 2개 [위 아래] [오른쪽 왼쪽] */
+	/* 1개 [위 오른쪽 아래 왼쪽] */
+
+	a {
+		margin: 0;
+		padding: 0 10px;
+		box-sizing: border-box;
+		color: blue;
 	}
 
-	body {
-		/* background-color: blueviolet; */
+	p {
+		margin: 0;
+		padding: 0 10px;
+		box-sizing: border-box;
+		/* color: blue; */
+	}
+
+	.lyrics p {
+		padding: 4px 10px;
 	}
 
 	#box {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 		width: 100%;
 		/* background-color: whitesmoke; */
 
@@ -29,6 +56,9 @@
 	}
 
 	.img {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		/* flex-wrap: nowrap; */
@@ -39,6 +69,9 @@
 	}
 
 	.left {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		/* flex-wrap: nowrap; */
@@ -48,16 +81,17 @@
 		/* text-align: center; */
 	}
 
-	p {
-		padding-left: 10px;
-		padding-right: 10px;
-		/* color: blue; */
-	}
-
-	a {
-		padding-left: 10px;
-		padding-right: 10px;
-		/* color: red; */
+	.lyrics {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		/* flex-wrap: nowrap; */
+		/* justify-content: center; */
+		/* align-content: center; */
+		align-items: center;
+		/* text-align: center; */
 	}
 </style>
 
@@ -81,7 +115,7 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_02.jpg" style="width: 350px" />
 		<!-- <p>a_1_test_02</p> -->
-		<p>예쁘게 옷입고 데이트</p>
+		<p>강아지 데리구</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -93,7 +127,7 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_03.jpg" style="width: 350px" />
 		<!-- <p>a_1_test_03</p> -->
-		<p>예쁘게 옷입고 데이트</p>
+		<p>예쁘게 옷입혀서 데이트도 하고</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -104,7 +138,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_04.jpg" style="width: 350px" />
-		<p>a_1_test_04</p>
+		<!-- <p>a_1_test_04</p> -->
+		<p>예쁘게 사진도</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -115,7 +150,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_05.jpg" style="width: 350px" />
-		<p>a_1_test_05</p>
+		<!-- <p>a_1_test_05</p> -->
+		<p>찰칵!</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -126,7 +162,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_06.jpg" style="width: 350px" />
-		<p>a_1_test_06</p>
+		<!-- <p>a_1_test_06</p> -->
+		<p>찰칵,</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -137,7 +174,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_07.jpg" style="width: 350px" />
-		<p>a_1_test_07</p>
+		<!-- <p>a_1_test_07</p> -->
+		<p>찰칵.</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -148,7 +186,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_08.jpg" style="width: 350px" />
-		<p>a_1_test_08</p>
+		<!-- <p>a_1_test_08</p> -->
+		<p>사계절 함께 여행도</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -159,7 +198,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_09.jpg" style="width: 350px" />
-		<p>a_1_test_09</p>
+		<!-- <p>a_1_test_09</p> -->
+		<p>많이 다니면서</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -170,7 +210,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_1_date_10.jpg" style="width: 350px" />
-		<p>a_1_test_10</p>
+		<!-- <p>a_1_test_10</p> -->
+		<p>소중한 기억, 추억 많이 만들어 줄거에요</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -214,7 +255,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_4_jeju_04.jpg" style="width: 350px" />
-		<p>a_4_test_04</p>
+		<!-- <p>a_4_test_04</p> -->
+		<p>제주도로 여행도 가고</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -236,7 +278,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/a_5_christmas_02.jpg" style="width: 350px" />
-		<p>a_5_test_02</p>
+		<!-- <p>a_5_test_02</p> -->
+		<p>크리스마스도 매년 함께 하구요</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -248,7 +291,8 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/b_1_boring_01.jpg" style="width: 350px" />
 		<!-- <p>b_1_test_01</p> -->
-		<p>기분 풀어주기</p>
+		<!-- <p>기분 풀어주기</p> -->
+		<p>속상하거나</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -259,7 +303,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/b_2_lonely_01.jpg" style="width: 350px" />
-		<p>b_2_test_01</p>
+		<!-- <p>b_2_test_01</p> -->
+		<p>슬프거나</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -270,7 +315,7 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/b_2_lonely_02.jpg" style="width: 350px" />
-		<p>b_2_test_02</p>
+		<p>외롭게 만들어서</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -279,20 +324,20 @@
 	<br />
 	<br />
 
-	<div class="img">
+	<!-- <div class="img">
 		<img src="https://number9.gq/test-img/b_2_lonely_03.jpg" style="width: 350px" />
 		<p>b_2_test_03</p>
-	</div>
+	</div> -->
 	<!-- <p>comment.</p> -->
+	<!-- <br />
 	<br />
 	<br />
 	<br />
-	<br />
-	<br />
+	<br /> -->
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/b_3_upset_01.jpg" style="width: 350px" />
-		<p>b_3_test_01</p>
+		<p>방치되는 일</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -303,7 +348,7 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/b_3_upset_02.jpg" style="width: 350px" />
-		<p>b_3_test_02</p>
+		<p>없도록</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -315,7 +360,8 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/c_1_attention_01.jpg" style="width: 350px" />
 		<!-- <p>c_1_test_01</p> -->
-		<p>c 놀아주기</p>
+		<!-- <p>c 놀아주기</p> -->
+		<p>항상 관심있게 바라보고 또 돌볼거에요</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -326,7 +372,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/c_2_photo_01.jpg" style="width: 350px" />
-		<p>c_2_test_01</p>
+		<!-- <p>c_2_test_01</p> -->
+		<p>혼자 잘 놀고 있어도 관심있게 바라볼거구</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -348,7 +395,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/c_3_bag_02.jpg" style="width: 350px" />
-		<p>c_3_test_02</p>
+		<!-- <p>c_3_test_02</p> -->
+		<p>같이 나가고</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -359,7 +407,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/c_4_walk_01.jpg" style="width: 350px" />
-		<p>c_4_test_01</p>
+		<!-- <p>c_4_test_01</p> -->
+		<p>같이 산책가고</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -393,7 +442,8 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/d_1_play_03.jpg" style="width: 350px" />
 		<!-- <p>d_1_test_03</p> -->
-		<p>관심가져주기</p>
+		<!-- <p>관심가져주기</p> -->
+		<p>귀여운 강아지랑 같이 놀아주면서</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -404,7 +454,8 @@
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/d_1_play_04.jpg" style="width: 350px" />
-		<p>d_1_test_04</p>
+		<!-- <p>d_1_test_04</p> -->
+		<p>언제나 함께라는걸 행동으로 보여줄거에요</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -416,30 +467,33 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/e_1_chic_01.jpg" style="width: 350px" />
 		<!-- <p>e_1_test_01</p> -->
+		<p>하지만 수직적인 관계에 엄할 땐 아주 엄할 거에요,</p>
 	</div>
 	<!-- <p>comment.</p> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/e_1_chic_03.jpg" style="width: 350px" />
+		<p>대외적으로는 도도한 여성으로 보여지겠지만</p>
 		<!-- <p>e_1_test_03</p> -->
 	</div>
 	<!-- <p>comment.</p> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
-	<!-- <br /> -->
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
 
 	<div class="img">
 		<img src="https://number9.gq/test-img/f_3_item_02.jpg" style="width: 350px" />
 		<!-- <p>f_3_test_02</p> -->
-		<p>사람들 앞에서</p>
-		<p>수직적</p>
+		<!-- <p>사람들 앞에서</p> -->
+		<!-- <p>수직적</p> -->
+		<p>사실은</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -451,6 +505,7 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/g_1_bed_01.jpg" style="width: 350px" />
 		<!-- <p>g_1_test_01</p> -->
+		<!-- <p>침대 위에선</p> -->
 	</div>
 	<!-- <p>comment.</p> -->
 	<!-- <br /> -->
@@ -462,7 +517,9 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/g_1_bed_02.jpg" style="width: 350px" />
 		<!-- <p>g_1_test_02</p> -->
-		<p>g 야하게</p>
+		<!-- <p>g 야하게</p> -->
+		<!-- <p>그저 귀여운 강아지이기만 하면 돼요</p> -->
+		<p>항상 나에겐 한 마리 귀여운 강아지일거에요.</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -485,7 +542,7 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/h_1_birthday_02.jpg" style="width: 350px" />
 		<!-- <p>h_1_test_02</p> -->
-		<p>생일 챙겨주고</p>
+		<p>그런만큼 항상 소중히 생일도 기억하구</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -519,7 +576,7 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/i_1_cute_03.jpg" style="width: 350px" />
 		<!-- <p>i_1_test_03</p> -->
-		<p>예뻐해주기</p>
+		<p>강아지의 모든 면들을 귀여워해주고 또 예뻐해줄거고,</p>
 	</div>
 	<!-- <p>comment.</p> -->
 	<br />
@@ -553,19 +610,61 @@
 	<div class="img">
 		<img src="https://number9.gq/test-img/i_2_sleep_03.jpg" style="width: 350px" />
 		<!-- <p>i_2_test_03</p> -->
-		<p>재워주기</p>
+		<p>마음편히 잘 수 있도록 항상 재워줄게요</p>
 	</div>
+	<br />
 	<br />
 	<br />
 	<p>comment.</p>
 	<br />
-	<br />
 	<div class="left">
-		<a href="https://google.com" target="_blank">google.com</a>
+		<a href="http://open.kakao.com/me/number_nine" target="_blank">http://open.kakao.com/me/number_nine</a>
 	</div>
 	<br />
 	<br />
 	<br />
 	<br />
 	<br />
+	<div class="lyrics">
+		<!-- <video src="https://number9.gq/video/colde - your dog loves you.mp4" width="350" height="196.875" controls></video> -->
+		<img src="https://image.bugsm.co.kr/album/images/500/201558/20155806.jpg" style="width: 350px" />
+		<br />
+		<a href="https://youtu.be/b1uifHd1Zn8" target="_blank">https://youtu.be/b1uifHd1Zn8</a>
+		<br />
+		<p>너와 걸을 때면</p>
+		<p>난 내가 사랑하는 걸 느껴</p>
+		<p>너와 발을 맞출 때 yeah</p>
+		<p>이렇게 기분 좋은 걸</p>
+		<p>향기로운 풍경</p>
+		<p>일렁이는 물결</p>
+		<p>i feel like something new</p>
+		<p>언제 어디든</p>
+		<p>곁에 있을게</p>
+		<p>우린 같은 걸 보면서</p>
+		<p>이렇게 네가 날 안아주면</p>
+		<p>말을 건네지 않아도</p>
+		<p>서로를 바라봐 주면서</p>
+		<p>웃어줘</p>
+		<p>함께 하는 순간</p>
+		<p>한번 더 안아줘</p>
+		<p>everyday & night</p>
+		<p>널 처음 만났을 때</p>
+		<p>우리가 영원할 거란 걸</p>
+		<p>난 가끔 걱정이 돼</p>
+		<p>세상이 너와 날 외면할 때</p>
+		<p>그래 사실 난 겁쟁이야</p>
+		<p>좀 예민하고 소심할 뿐인데</p>
+		<p>하지만 괜찮아</p>
+		<p>넌 유일한 내 편</p>
+		<p>다시 태어나면</p>
+		<p>내가 먼저 널 안아줄게</p>
+		<p>우린 같은 걸 보면서 (약속해)</p>
+		<p>이렇게 네가 날 안아주면</p>
+		<p>말을 건네지 않아도</p>
+		<p>서로를 바라봐 주면서</p>
+		<p>웃어줘</p>
+		<p>함께 하는 순간</p>
+		<p>한번 더 안아줘</p>
+		<p>everyday & night</p>
+	</div>
 </div>
